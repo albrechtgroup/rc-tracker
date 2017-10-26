@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RC TRACKer</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Passion+One" rel="stylesheet">
+    <link href="rcsearch.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+</head>
+<body>
+    <div class="navBar">
+        <div class="title">
+            <h1>RC TRACKer</h1>
+        </div>
+        <div>
+            <form method="POST" action="/search-by-zip">
+        		<input type="text" name="zip" placeholder="Zip Code (12345)">
+        		<input type="submit">
+    		</form>
+    		<form method="POST" action="/search-by-surface">
+        		<input type="text" name="surface" placeholder="Off Road/On Road">
+        		<input type="submit">
+		    </form>
+            <div class="userChose">
+                <% if (typeof zip !== 'undefined') { %>
+
+                * You Searched For: <%= zip %>
+
+            <% } %>
+            </div>
+        </div>
+        <div class="subNav">
+            <a href="#home">Home</a>
+            <a href="#news">About</a>
+            <a href="#addTrail">Add Track/Trail</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div> 
+
+    <div class="resultsContainer">        
+        <% include nytracks %>    
+    </div>
+    <footer>
+        <div class="footer">
+            <h3>Copyright Albrecht Group  2017</h3>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+

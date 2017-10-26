@@ -1,0 +1,25 @@
+<div>
+	
+	<% if (!tracks || !tracks.length) { %>
+
+  	<h2>No Results Near You.</h2>
+
+  <% } %>
+
+	<% tracks.forEach(function(track){ %>
+		
+		<div class="location">
+			<h2 class="track-title"><%= track.name %></h2>
+
+			<div class="surfaces">
+				<% track.surfaces.forEach(function(surface){ %>
+
+				<span class="surface <%= surface.trim().replace(" ", "-") %>"><%= surface %></span>
+
+				<% }) %>
+			</div>
+		</div>
+
+	<% }) %>
+
+</div>

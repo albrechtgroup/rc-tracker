@@ -1,8 +1,10 @@
 body {
-    background: #D3D3D3 url("https://ivorykaleidoscope.files.wordpress.com/2017/10/rc-surge.jpg?w=768") no-repeat center fixed;
-    background-size: cover; 
+    background-image: url("https://www.absima.shop/absima_en/prodpic/1-10-EP-Crawler-CR3-4-SHERPA-BLUE-RTR-12012_b_0.JPG");
+    background-size: cover;
     font-family: 'Black Ops One', cursive;
+
 }
+/* ///"https://ivorykaleidoscope.files.wordpress.com/2017/10/rc-surge.jpg?w=76" */
 
 .navBar {
     background: rgba(255, 255, 255, 0.75);
@@ -10,8 +12,8 @@ body {
     padding: 0;
     /*height: 160px;*/
     margin: 0px, 70px, 0px, 70px auto;
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
@@ -111,8 +113,8 @@ a, a:visited, a:active {
 }
 
 .footer {
-    text-align: center; 
-    float: bottom;   
+    text-align: center;
+    float: bottom;
     color: #FF8C00;
 }
 
@@ -123,4 +125,3 @@ a, a:visited, a:active {
         font-size: 1em;
     }
 }
-    
